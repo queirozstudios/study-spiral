@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adicionar/Editar/Excluir Temas</title>
+    <link rel="stylesheet" href="css/input.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Adicionar/Editar/Excluir Temas</h1>
+      <form id="themeForm">
+        <select id="themeSelect">
+          <option value="" disabled selected>Selecione um Tema</option>
+        </select>
+        <input type="text" id="theme" placeholder="Tema Principal" required />
+        <input
+          type="text"
+          id="subthemes"
+          placeholder="Subtemas (separados por vírgulas)"
+          required
+        />
+        <button type="submit">Salvar</button>
+        <button type="button" class="delete-button" id="deleteButton">
+          Excluir
+        </button>
+      </form>
+    </div>
+    <script src="js/input.js"></script>
+  </body>
+</html>
